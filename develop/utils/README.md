@@ -1,11 +1,11 @@
-# j
+# Readme Generator
 
-[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 
 ## Description
 
-jh
+This project creates a readme.md file using node js
 
 ## Table of Contents
 
@@ -31,11 +31,11 @@ npm i
 
 ## Usage
 
-
+Use as you wish. Contact me with anynquestions
 
 ## Contributing
 
-
+Contact me.
 
 ## Tests
 
@@ -45,11 +45,11 @@ npm test
 
 ## Questions
 
-If you have any questions, you can contact me directly at @. You can find more of my work at [github/l](https://github.com/l).
+If you have any questions, you can contact me directly at jeodom17@gmail.com. You can find more of my work at [github/jeodom17](https://github.com/jeodom17).
 
 
 
 ## License
     
-    This project is licensed under the [APACHE 2.0 License](https://opensource.org/licenses/Apache-2.0).
+    This project is licensed under the [MIT License](https://opensource.org/licenses/MIT).
 
