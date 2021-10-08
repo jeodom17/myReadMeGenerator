@@ -55,9 +55,54 @@ function renderLicenseSection(license) {
       }
 }
 
-// TODO: Create a function to generate markdown for README
+///  -- Function to generate markdown for README --
 function generateReadMe(data) {
-  return `# ${data.title}
+  return `# ${data.projectTitle}
+
+${renderLicenseBadge(data.license)}
+
+
+## Description
+
+${data.description}
+
+## Table of Contents
+
+* [Installation](#installation)
+
+* [Usage](#usage)
+
+* [License](#license)  
+
+* [Contributing](#contributing)
+
+* [Tests](#tests)
+
+* [Tests](#tests)
+
+* [Questions](#questions)
+
+## Installation
+
+To install necessary dependencies, run the following command:
+
+${data.installCommand}
+
+## Usage
+
+${data.usage}
+
+## Contributing
+
+${data.contributing}
+
+## Tests
+
+To run tests, run the following command:
+
+${data.testCommand}
+
+## Questions
 
 `;
 }
