@@ -104,15 +104,14 @@ ${data.testCommand}
 
 ## Questions
 
+If you have any questions, you can contact me directly at ${data.email}. You can find more of my work at [github/${data.userName}](https://github.com/${data.userName}).
+
+
+## License
+
+${renderLicenseSection(data.license)}
+
 `;
 }
-
-
-
-
-
-
-
-
 
 module.exports = generateReadMe;
