@@ -1,6 +1,8 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
-
+const util  =require('util');
+const writeFileAsync = util.promisify(writeToFile);
+const generateReadMe = require('./generateReadMe');
 // -- Array of questions for user input --
 const questions = [
     {
@@ -70,7 +72,7 @@ const questions = [
 // -- Function to write README file --
 function writeToFile(fileName, data) {
     fs.writeFile(fileName, data, (err) =>{
-    err ? console.error(err) : console.log('Generating README...');
+    err ? console.error(err) : console.log("\x1b[32mREADME Complete!!!");
     });
 }
 
@@ -79,7 +81,8 @@ function init() {
     inquirer
         .prompt(questions)
         .then((answers) =>{
-            writeToFile('./MyREADME/README.md', generateReadMe(answers));
+            console.log("Generating README...")
+            writeToFile('./README.md', generateReadMe(answers));
         });
 }
 
